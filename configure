@@ -6650,7 +6650,7 @@ case $with_sysroot in #(
      lt_sysroot=`$CC --print-sysroot 2>/dev/null`
    fi
    ;; #(
- /*)
+ /* | ?:*) # /a/b/c or C:/a/b/c
    lt_sysroot=`echo "$with_sysroot" | sed -e "$sed_quote_subst"`
    ;; #(
  no|'')
